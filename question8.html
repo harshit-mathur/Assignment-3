@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Questions_7</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+      function check()
+      {     var array = [];
+            var uniqueArray = [];
+            for(var i = 0; a != "stop" ; i++ )
+                { 
+                  var a = prompt("Enter word, to stop write 'stop'")
+                  if(a != "stop" || a != "Stop" || a != "STOP")
+                  {
+                    array[i] = a;
+                  }
+
+                }
+
+            for(i=0; i < array.length; i++)
+            {
+              if(uniqueArray.indexOf(array[i]) === -1) 
+              {
+                  uniqueArray.push(array[i]);
+              }
+            }
+          document.getElementById('output').innerHTML = uniqueArray;
+      }
+        
+    </script>
+      
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 col-12">
+          <h1>Remove the duplicate elements from array</h1>
+          <!--<label>Enter first element of array:-</label><input type="text" name="first" id="a"><br>-->
+          <p>Result: <span id="output"></span></p>
+          <button onclick="check()">To start the program click here</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

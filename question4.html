@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Questions_4</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+      function count(a,b){
+            var count = 0;
+            for(var i=0; i<a.length; i++) {
+              if(a[i] === b) {
+                count++;
+              }
+            }
+            document.getElementById('output').innerHTML = count;
+        }
+    </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 col-12">
+          <h1>Find the occurance of a character in a string</h1>
+          <label>Enter first number:-</label><input type="text" name="first" id="a"><br>
+          <label>Enter second number:-</label><input type="text" name="second" id="b"><br>
+          <p>Result: <span id="output"></span></p>
+          <button onclick="count(document.getElementById('a').value,document.getElementById('b').value)">Calculate</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Questions_3</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+    	function add(a){
+    		var i = 0;
+    		var a = parseInt(a);
+    		var sum = 0;
+			for (i = a ; i > 0 ; i-- ) {
+    				sum = sum + i;
+      	 		}
+      	 		document.getElementById('output').innerHTML = sum;
+			}
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-sm-6 col-12">
+					<h1>Add up the number from a single numbers</h1>
+  					<label>Enter number</label><input type="number" name="first" id="a">
+  					<p>Result: <span id="output"></span></p>
+  					<button onclick="add(document.getElementById('a').value)">Calculate</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

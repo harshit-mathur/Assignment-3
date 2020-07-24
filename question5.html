@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Questions_5</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+      function replace(word){
+            var str = word
+            
+            let newString = " ";                            
+              for (let i = 0; i < str.length; i++)  
+              {           
+                if (str[i] != "a" && str[i] != "e" && str[i] != "i" && str[i] != "o" && str[i] != "u")                                   
+                 {           
+                 newString += str[i];         
+                 };
+                if( str[i] === "a" )
+                { 
+                    var newc = 1
+                    newString += newc; 
+                }
+                if( str[i] === "e" )
+                { 
+                    var newc = 2
+                    newString += newc; 
+                }
+                if( str[i] === "i" )
+                { 
+                    var newc = 3
+                    newString += newc; 
+                }
+                if( str[i] === "o" )
+                { 
+                    var newc = 4
+                    newString += newc; 
+                }
+                if( str[i] === "u" )
+                { 
+                    var newc = 5
+                    newString += newc; 
+                }
+              };   
+            document.getElementById('output').innerHTML = newString;
+        }
+    </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 col-12">
+          <h1>Replace the vowel with specific number</h1>
+          <label>Enter a string:-</label><input type="text" name="first" id="a"><br>
+          <p>Result: <span id="output"></span></p>
+          <button onclick="replace(document.getElementById('a').value)">Replace</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

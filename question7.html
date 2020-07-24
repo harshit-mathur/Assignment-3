@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Questions_7</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+      function check(a,b,c,d){
+            var arr = [a,b,c,d]
+            if(a === b && a === c && a === c && a === d){
+                document.getElementById('output').innerHTML = true;
+            }
+            else{
+              document.getElementById('output').innerHTML = false;
+            }
+        }
+    </script>
+</head>
+<body>
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-sm-8 col-12">
+          <h1>Hitting the jackpot or check if all elements are same</h1>
+          <label>Enter first element of array:-</label><input type="text" name="first" id="a"><br>
+          <label>Enter second element of array:-</label><input type="text" name="second" id="b"><br>
+          <label>Enter third element of array:-</label><input type="text" name="first" id="c"><br>
+          <label>Enter fourth element of array:-</label><input type="text" name="second" id="d"><br>
+          <p>Result: <span id="output"></span></p>
+          <button onclick="check(document.getElementById('a').value,document.getElementById('b').value,document.getElementById('c').value,document.getElementById('d').value)">Calculate</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

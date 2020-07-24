@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <title>Questions_2</title>
+    <style type="text/css"></style>
+    <script type="text/javascript">
+    	function even(a,b){
+            if (a % b == 0) {
+                document.getElementById('output').innerHTML = true;
+            }
+            else{
+              document.getElementById('output').innerHTML = false;
+            }
+        }
+    </script>
+</head>
+<body>
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-sm-8 col-12">
+				  <h1>Check if a number is evenly divisible to the other number</h1>
+          <label>Enter first number:-</label><br><input type="number" name="first" id="a"><br>
+          <label>Enter second number:-</label><br><input type="number" name="second" id="b"><br>
+          <p>Result: <span id="output"></span></p>
+          <button onclick="even(document.getElementById('a').value,document.getElementById('b').value)">Calculate</button>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
